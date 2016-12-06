@@ -13,6 +13,7 @@
         vm.emails = {};
         vm.image = "";
 
+        // The initialize logic was updated per: https://github.com/OfficeDev/generator-office/issues/154
         Office.initialize = function() {
             //console.log('>>> Office.initialize()');
             getDataFromService();

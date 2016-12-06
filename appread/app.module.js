@@ -16,6 +16,7 @@
     }
   }]);
 
+  // The initialize logic was updated per: https://github.com/OfficeDev/generator-office/issues/154
 //   // when Office has initalized, manually bootstrap the app
 //   if (location.href.indexOf('access_token=') < 0) {
 //     // when Office has initalized, manually bootstrap the app
