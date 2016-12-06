@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="MailApp" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0">
+  <Id>59d95642-fcbb-4546-b82b-d07d2ee8ca72</Id>
+  <Version>1.0.0.0</Version>
+  <ProviderName>GavinB</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Outlook ADAL"/>
+  <Description DefaultValue="Repro for an issue with ADAL in the context of an Outlook Add-In"/>
+  <HighResolutionIconUrl DefaultValue="https://localhost:8443/images/hi-res-icon.png"/>
+  <AppDomains>
+    <AppDomain>https://login.windows.net</AppDomain>
+    <AppDomain>https://login.microsoftonline.net</AppDomain>
+    <AppDomain>https://login.microsoftonline.com</AppDomain>
+  </AppDomains>
+  <Hosts>
+    <Host Name="Mailbox"/>
+  </Hosts>
+  <Requirements>
+    <Sets>
+      <Set Name="MailBox" MinVersion="1.1"/>
+    </Sets>
+  </Requirements>
+  <FormSettings>
+    <Form xsi:type="ItemRead">
+      <DesktopSettings>
+        <SourceLocation DefaultValue="https://localhost:8443/appread/index.html"/>
+        <RequestedHeight>250</RequestedHeight>
+      </DesktopSettings>
+    </Form>
+  </FormSettings>
+  <Permissions>ReadWriteItem</Permissions>
+  <Rule xsi:type="ItemIs" ItemType="Message" FormType="Read"/>
+  <DisableEntityHighlighting>false</DisableEntityHighlighting>
+</OfficeApp>
